@@ -1,0 +1,65 @@
+<template>
+  <header>
+    <NavBar />
+    <main class="Intro-section">
+      <img src="../src/images/Vue_logo.png" />
+      <h1>Welcome to Vue.js</h1>
+      <h3>Become a coding ninja with the fastest-growing JavaScript framework</h3>
+      <button src="../src/images/Buttton shape.png">Awesome!</button>
+    </main>
+    <div class="green-Zone">
+      <Articles />
+    </div>
+  </header>
+</template>
+
+<script >
+import NavBar from './components/NavBar.vue'
+import Articles from './components/articles.vue'
+export default {
+  name: 'App',
+  components: {
+    NavBar,
+    Articles
+  }
+}
+</script>
+
+<style scoped>
+.Intro-section {
+  display: flex;
+  align-items: center;
+  max-width: 456px;
+  height: 299px;
+}
+
+.Intro-section img {
+  width: 128px;
+  height: 129px;
+}
+
+.Intro-section h1 {
+  color: #2b2f30;
+  font-size: 50px;
+  font-family: Inter;
+  font-weight: 800;
+  line-height: 95px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.Intro-section h3 {
+  color: black;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.Intro-section button {
+  color: #34495e;
+  font-variant-numeric: ;
+}
+</style>
