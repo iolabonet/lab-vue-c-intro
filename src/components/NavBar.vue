@@ -9,10 +9,11 @@
 <style scoped>
 nav{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
 
     padding: 0 30px;
     margin-top: 20px;
+    max-width: 483px;
+
 }
 </style>
