@@ -28,7 +28,22 @@ export default {
 },
   data(){
     return {
-      // Targets min 12 video iphone.
+      target: [{
+        icon:'../images/USP-1.svg',
+        title:'Performant',
+        description:'Truly reactive, compiler-optimized rendering system that rarely requires manual optimization.',
+      }
+      ,{
+        icon:'../images/USP-2.svg',
+        title:'Approachable',
+        description:'Builds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation.',
+      },
+      {
+        icon:'../images/USP-3.svg',
+        title:'Versatile',
+        description:'A rich, incrementally adoptable ecosystem that scales between a library and a full-featured framework.',
+      }
+      ]
     }
   }
 }

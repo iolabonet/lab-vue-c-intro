@@ -10,10 +10,10 @@ export default {
     props: {
         icon: {
             type: String,
-        }
+        },
         title: {
             type: String,
-        }
+        },
         description: {
             type: String,
         }
