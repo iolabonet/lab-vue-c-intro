@@ -6,54 +6,28 @@
       <h1>Welcome to Vue.js</h1>
       <h3>Become a coding ninja with the fastest-growing JavaScript framework</h3>
       <button src="../src/images/Buttton shape.png">Awesome!</button>
-    </main>
-    <section class="greenZone">
-      <Targets v-for="Targets in greenZone" :key="Targets.id"
-        :icon="Targets.icon"
-        :title="Targets.title"
-        :description="Targets.description"
-      />
-    </section>
+    </main>    
   </header>
+   <greenZone /> 
 </template>
 
 <script >
 import NavBar from './components/NavBar.vue';
-import Targets from './components/Targets.vue';
+import GreenZone from './components/greenZone.vue';
 export default {
   name: 'App',
   components: {
     NavBar,
-    Targets
-},
-  data(){
-    return {
-      target: [{
-        icon:'../images/USP-1.svg',
-        title:'Performant',
-        description:'Truly reactive, compiler-optimized rendering system that rarely requires manual optimization.',
-      }
-      ,{
-        icon:'../images/USP-2.svg',
-        title:'Approachable',
-        description:'Builds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation.',
-      },
-      {
-        icon:'../images/USP-3.svg',
-        title:'Versatile',
-        description:'A rich, incrementally adoptable ecosystem that scales between a library and a full-featured framework.',
-      }
-      ]
-    }
+    GreenZone,
   }
 }
 </script>
 
 <style scoped>
-@import url(https://fonts.google.com/share?selection.family=Inter:wght@400;800);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap');
 
 *{
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
 }
 .Intro-section {
   display: flex;
@@ -99,11 +73,5 @@ export default {
   height: 31px;
   border-radius: 13px;
   background-color: #34495e;
-}
-
-.greenZone{
-  display: flex;
-  justify-content: space-between;
-
 }
 </style>
