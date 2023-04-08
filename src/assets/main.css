@@ -1,4 +1,6 @@
 @import './base.css';
+@import url(https://fonts.google.com/share?selection.family=Inter:wght@400;800);
+
 
 #app {
   max-width: 600px;
